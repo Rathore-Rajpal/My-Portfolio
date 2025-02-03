@@ -1,45 +1,21 @@
-import { motion } from 'framer-motion';
-
-const HomePage = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col justify-center items-center">
-      {/* Introductory Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: -50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 1 }}
-        className="text-center"
-      >
-        <h1 className="text-5xl font-bold mb-4">Rajpal Singh Rathore</h1>
-        <h2 className="text-2xl font-medium mb-6">BBA(CA) Graduate | Aspiring Digital Marketer | Cybersecurity Enthusiast</h2>
-        <p className="text-lg max-w-xl mx-auto">
-          Welcome to my portfolio! I am a proactive and organized professional with a strong foundation in programming and cybersecurity, passionate about exploring ethical hacking, Python, and data analytics.
-        </p>
-      </motion.div>
-
-      {/* Navigation with smooth transitions */}
-      <motion.div 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
-        transition={{ delay: 0.5, duration: 1 }}
-        className="mt-12 flex space-x-6"
-      >
-        <a href="#projects" className="text-lg font-semibold hover:text-gray-300 transition duration-300">Projects</a>
-        <a href="#skills" className="text-lg font-semibold hover:text-gray-300 transition duration-300">Skills</a>
-        <a href="#contact" className="text-lg font-semibold hover:text-gray-300 transition duration-300">Contact</a>
-      </motion.div>
-
-      {/* Scroll prompt */}
-      <motion.div 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 text-lg font-semibold animate-bounce"
-      >
-        Scroll Down
-      </motion.div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name = "viewport" content="width+device-width, initial-scale = 1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="fs"></div>
+      <div id="elem1"></div>
+      <div id="white"></div>
     </div>
-  );
-};
-
-export default HomePage;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
